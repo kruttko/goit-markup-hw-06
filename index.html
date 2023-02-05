@@ -55,11 +55,43 @@
           <button class="order-service-button button" data-modal-open type="button">Замовити послугу</button>
           <div class="modal-backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="btn-close button" data-modal-close>
-                <svg class="btn-close-icon" width="30" height="30">
+              <button class="modal-btn-close button" data-modal-close>
+                <svg class="modal-btn-close-icon" width="30" height="30">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <h1 class="modal-header">Залиште свої дані, ми вам передзвонимо</h1>
+              <form class="modal-form">
+                <div class="form-name form-field">
+                  <label class="modal-input-form" for="form-name">Ім'я</label>
+                  <input id="form-name" type="text" name="name">
+                </div>
+
+                <div class="from-tel form-field">
+                  <label class="modal-input-form" for="form-tel">Телефон</label>
+                  <input id="form-tel" type="tel" name="tel">
+                </div>
+
+                <div class="form-email form-field">
+                  <label class="modal-input-form" for="form-email">Пошта</label>
+                  <input id="form-email" type="email" name="email">
+                </div>
+
+                <div class="form-comment form-field">
+                  <label class="modal-input-form" for="form-comment">Коментар</label>
+                  <textarea id="form-comment" name="comment" rows="6" placeholder="Введіть текст"></textarea>
+                </div>
+
+                <div class="form-agreement">
+                  <input id="form-agreement" type="checkbox" name="agreement">
+                  <label for="form-agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                </div>
+
+                <button class="modal-submit-button button" type="submit">
+                  Відправити
+                </button>
+              </form>
+
             </div>
           </div>
         </div>
@@ -437,11 +469,7 @@
 
       <div class="footer-subscription-container">
         <p class="footer-subscription-text">Підпишіться на розсилку</p>
-        <form class="form-subscription">
-          <label>
-            <input class="subscription-input" type="email" placeholder="Email">
-          </label>
-        </form>
+        <input class="subscription-input" type="email" placeholder="Email">
         <button class="footer-subscription-button button">Підписатися
           <svg class="footer-subscription-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon-send"></use>
