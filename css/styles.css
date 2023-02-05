@@ -476,7 +476,7 @@ header .logo {
     color: var(--primary-text-color-theme-light);
 }
 
-.modal-form {
+.form-field {
     display: flex;
     flex-direction: column;
 }
@@ -491,6 +491,17 @@ header .logo {
     border-radius: 4px;
 }
 
+.form-field label {
+    margin-bottom: 4px;
+    text-align: left;
+
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color-theme-light);
+}
+
 .form-field textarea {
     resize: none;
     width: 100%;
@@ -499,6 +510,14 @@ header .logo {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .form-agreement {
@@ -511,6 +530,10 @@ header .logo {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-light);
+}
+
+.form-agreement-link {
+    color: var(--accent-color);
 }
 
 .modal-submit-button {
