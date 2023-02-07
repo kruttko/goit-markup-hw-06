@@ -462,11 +462,12 @@ header .logo {
     margin-right: 8px;
 
     background-color: #FFFFFF;
+    fill: #000000;
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
-    fill: tomato;
+    fill: var(--accent-color);
 }
 
 .modal-header {
