@@ -462,7 +462,8 @@ header .logo {
     margin-right: 8px;
 
     background-color: #FFFFFF;
-    fill: #000000;
+
+    transition: fill var(--transition-animation);
 }
 
 .modal-btn-close:hover,
@@ -482,10 +483,10 @@ header .logo {
 }
 
 .form-field {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-
-    position: relative;
 }
 
 .form-field input {
@@ -494,6 +495,11 @@ header .logo {
     margin-bottom: 10px;
     padding: 12px 12px 12px 42px;
 
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
@@ -514,6 +520,11 @@ header .logo {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px 16px;
+
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -540,6 +551,12 @@ header .logo {
 
 .form-field:focus-within > .form-input-icon {
     fill: var(--accent-color);
+}
+
+.form-field input:focus,
+.form-field textarea:focus  {
+    outline: none;
+    border: 1px solid var(--accent-color);
 }
 
 .form-agreement {
@@ -572,7 +589,6 @@ header .logo {
 }
 
 .form-agreement-icon {
-    display: inline-block;
     width: 16px;
     height: 15px;
     margin-right: 8px;
@@ -582,7 +598,7 @@ header .logo {
 }
 
 .form-agreement-checkbox:checked + .form-agreement-icon {
-    background-image: url('../images/check.svg');
+    background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: var(--accent-color);
@@ -810,13 +826,10 @@ header .logo {
 .footer-subscription-container {
     position: relative;
 
-    display: flex;
-    margin-left: auto;  
+    margin-left: 10%;  
 }
 
 .footer-subscription-text {
-    margin-bottom: 10px;
-
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -828,7 +841,7 @@ header .logo {
 
 .footer-subscription-form {
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 0;
 
     display: flex;
@@ -840,11 +853,27 @@ header .logo {
     padding: 15px;
     margin-right: 10px;
 
+    color: #FFFFFF;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.25;
+    letter-spacing: 0.03em;
+
     background-color: var(--dark-background-section-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+}
+
+.subscription-input::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.subscription-input:focus {
+    outline: none;
+    border: 1.5px solid var(--accent-color);
 }
 
 .footer-subscription-button {
