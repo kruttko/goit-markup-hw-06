@@ -609,6 +609,10 @@ header .logo {
     border-color: var(--accent-color);
 }
 
+.form-agreement-checkbox:focus + .form-agreement-icon {
+    border: 2px solid var(--accent-color);
+}
+
 
 .form-agreement-link {
     margin-left: 3px;
