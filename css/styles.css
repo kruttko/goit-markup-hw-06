@@ -808,8 +808,10 @@ header .logo {
 }
 
 .footer-subscription-container {
+    position: relative;
+
     display: flex;
-    margin-left: auto;    
+    margin-left: auto;  
 }
 
 .footer-subscription-text {
@@ -822,6 +824,14 @@ header .logo {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color-theme-dark);
+}
+
+.footer-subscription-form {
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+    display: flex;
 }
 
 .subscription-input {
