@@ -439,7 +439,6 @@ header .logo {
     transform: translate(-50%, -50%) scale(0.9);
 
     min-width: 528px;
-    min-height: 581px;
     padding: 40px;
 
     background-color: var(--white-background-section-color);
