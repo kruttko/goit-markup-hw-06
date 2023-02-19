@@ -259,16 +259,16 @@ header .logo {
 
 
 /* clients section */
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.clients-list-item:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,19 +281,19 @@ header .logo {
     transition: border-color var(--transition-animation);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--accent-color);
 }
 
-.clients-icon {
+.clients__icon {
     fill: var(--icons-fill-light-background);
 
     transition: fill var(--transition-animation);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
     fill: var(--accent-color);
 }
 /* ================ end components ================ */
