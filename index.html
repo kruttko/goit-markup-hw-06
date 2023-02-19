@@ -15,55 +15,56 @@
   <body>
     <header class="header">
       <div class="main-nav container">
-      <!--лого-->
-      <a class="logo link" href="#" lang="en">Web<span class="header-logo-second-word">Studio</span></a>
-      <!--навігація-->
-      <nav class="header-nav">
-        <ul class="nav-list list">
-          <li class="nav-list-item"><a class="nav-list-link link current" href="#">Студія</a></li>
-          <li class="nav-list-item"><a class="nav-list-link link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-list-item"><a class="nav-list-link link" href="#">Контакти</a></li>
-        </ul>
-      </nav>
+        <!--лого-->
+        <a class="logo link" href="#" lang="en">Web<span class="logo logo-word">Studio</span></a>
 
-      <ul class="header-contact list">
-        <li class="header-email">
-          <a class="header-email-link link" href="mailto:info@devstudio.com">
-            <svg class="header-contact-icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header-phone">
-          <a class="header-phone-link link" href="tel:+380961111111">
-            <svg class="header-contact-icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+        <!--навігація-->
+        <nav class="nav">
+          <ul class="nav-list list">
+            <li class="nav-list__item"><a class="nav-list__link link nav-list__link--current" href="#">Студія</a></li>
+            <li class="nav-list__item"><a class="nav-list__link link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-list__item"><a class="nav-list__link link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__email">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__phone">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
     </div>
     </header>
     <main class="main">
 
       <!--Hero-->
-      <section class="hero-section section">
+      <section class="hero section">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="order-service-button button" data-modal-open type="button">Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button button" data-modal-open type="button">Замовити послугу</button>
           
           <div class="modal-backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-btn-close button" data-modal-close>
-                <svg class="modal-btn-close-icon" width="30" height="30">
+              <button class="modal--close button" data-modal-close>
+                <svg class="modal__icon" width="30" height="30">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
-              <h1 class="modal-header">Залиште свої дані, ми вам передзвонимо</h1>
-              <form class="modal-form">
-                <div class="form-field">
+              <h1 class="modal__header">Залиште свої дані, ми вам передзвонимо</h1>
+              <form class="form">
+                <div class="form__field">
                   <label class="modal-input-form" for="form-name">Ім'я</label>
                     <input class="form-input" id="form-name" type="text" name="service-form-input-name">
                     <span class="form-input-icon">
@@ -443,7 +444,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-contacts-container">
-          <a class="footer-logo logo link" href="#" lang="en">Web<span class="footer-logo-second-word">Studio</span></a>
+          <a class="logo link" href="#" lang="en">Web<span class="logo logo-word--reverse">Studio</span></a>
           <address class="footer-contacts">
           м. Київ, пр-т Лесі Українки, 26
           <ul class="footer-contacts-list list">
