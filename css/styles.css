@@ -507,8 +507,8 @@ header .logo {
 
 .form-field label {
     margin-bottom: 4px;
+    
     text-align: left;
-
     font-family: inherit;
     font-size: 12px;
     line-height: 1.16;
