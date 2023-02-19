@@ -145,7 +145,7 @@ header .logo {
 
 
 /* features section */
-.features-item-title {
+.features__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -156,7 +156,7 @@ header .logo {
     color: var(--primary-text-color-theme-light);
 }
 
-.features-item-desc {
+.features__desc {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -652,19 +652,19 @@ header .logo {
 
 
 /* features section */
-.features-list {
+.features__list {
     display: flex;
 }
 
-.features-list-item{
+.features__item{
     width: 270px;
 }
 
-.features-list-item:not(:last-child) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.features-icon-container {
+.features__container {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -675,7 +675,7 @@ header .logo {
     border-radius: 4px;
 }
 
-.features-icon {
+.features__icon {
     background-color: var(--light-background-section-color);
 }
 
