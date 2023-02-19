@@ -144,6 +144,24 @@ header .logo {
 
 
 
+
+
+.section-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-light);
+}
+
+
+
+
+
+
 /* features section */
 .features__title {
     margin-bottom: 10px;
@@ -168,13 +186,13 @@ header .logo {
 
 
 /* team section */
-.team-list-item {
+.team__item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -405,17 +423,6 @@ header .logo {
 .hero__button:focus {
     background-color: var(--blue-button-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.section-title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-light);
 }
 
 .modal-backdrop {
@@ -680,25 +687,28 @@ header .logo {
 }
 
 
-.studio-work-section {
+
+
+/* work section */
+.work {
     padding-top: 0px;
 }
 
-.work-list {
+.work__list {
     display: flex;
 }
 
-.work-list-item:not(:last-child) {
+.work__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.work-list-item {
+.work__item {
     position: relative;
 
     z-index: -1;
 }
 
-.work-item-text {
+.work__text-container {
     position: absolute;
 
     bottom: 0;
@@ -708,7 +718,7 @@ header .logo {
     padding-bottom: 27px;
 }
 
-.work-text {
+.work__text {
     display: flex;
     justify-content: center;
 
@@ -719,16 +729,21 @@ header .logo {
     text-transform: uppercase;
 }
 
+
+
+
+
+
 /* team section */
-.team-section {
+.team {
     background-color: var(--light-background-section-color);
 }
 
-.team-list-img {
+.team__img-list {
     display: flex;
 }
 
-.team-card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
